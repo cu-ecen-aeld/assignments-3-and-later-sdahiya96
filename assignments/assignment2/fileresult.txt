@@ -1,0 +1,4 @@
+$ make CROSS_COMPILE=aarch64-none-linux-gnu-
+aarch64-none-linux-gnu-gcc -Wall -Wextra -O2 -c writer.c -o writer.o
+aarch64-none-linux-gnu-gcc -Wall -Wextra -O2 -o writer writer.o
+
