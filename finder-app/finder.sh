@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 N_ARGS=2
 if [[ $# -ne "$N_ARGS" ]]; then
