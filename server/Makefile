@@ -1,6 +1,6 @@
 CC ?= gcc
-CFLAGS ?= -Wall -Wextra -g
-LDFLAGS ?=
+CFLAGS ?= -Wall -Wextra -g -pthread
+LDFLAGS ?= -pthread
 
 TARGET = aesdsocket
 
@@ -18,4 +18,4 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(TARGET) $(DATA_FILE)
+	rm -f $(OBJS) $(TARGET) $(DATA_FILE) valgrind-out.txt
