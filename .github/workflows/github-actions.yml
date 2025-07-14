@@ -23,4 +23,6 @@ jobs:
           - name: Checkout submodules
             run : git submodule update --init --recursive
           - name: Run full test
+            env:
+                FORCE_UNSAFE_CONFIGURE: "1"
             run: ./full-test.sh
